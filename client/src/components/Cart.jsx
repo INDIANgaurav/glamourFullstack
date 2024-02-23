@@ -21,7 +21,7 @@ const Cart = () => {
 
 
   const CheckOut = async() => {
-    const res = await axios.get(`http://localhost:5000/api/checkout`) ;
+    const res = await axios.get(`https://glamourfullstack.onrender.com/api/checkout`) ;
     console.log(res);
     const {url} = await res.data ;
     window.location.href = url  

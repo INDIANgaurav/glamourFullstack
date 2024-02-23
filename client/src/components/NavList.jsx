@@ -4,7 +4,7 @@ import toast from "react-hot-toast"
 import {Link} from "react-router-dom"
 const NavList = ({toggleNav , setToggleNav , auth}) => {
   const handleLogout = async () => {
-    const res = await axios.get("http://localhost:5000/api/logout") ;
+    const res = await axios.get("https://glamourfullstack.onrender.com/api/logout") ;
     const data = await res.data ;
     toast.success(data.message) ; 
     window.location.href = "/" ;

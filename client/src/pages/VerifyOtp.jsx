@@ -14,7 +14,7 @@ const VerifyOtp = () => {
 
     try {
       setLoading(true) ;
-      const res = await axios.put("http://localhost:5000/api/verify-otp", {
+      const res = await axios.put("https://glamourfullstack.onrender.com/api/verify-otp", {
         otp,
         newPassword: password,
       });

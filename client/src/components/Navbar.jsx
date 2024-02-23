@@ -19,7 +19,7 @@ const Navbar = () => {
   const user = useSelector((state) => state.auth.user);
   console.log("user --->>>" + user) ;
   const getUser = async() =>{
-    const res = await axios.get("http://localhost:5000/api/get-user",{
+    const res = await axios.get("https://glamourfullstack.onrender.com/api/get-user",{
       withCredentials : true
     });
     const data = await res.data;

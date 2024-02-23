@@ -10,7 +10,7 @@ const routes = require("./routes");
 connectDb();
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: ["glamour-food-app1-13s4aa3vj-indiangaurav.vercel.app"],
     credentials: true,
   })
 );

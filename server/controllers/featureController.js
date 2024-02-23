@@ -223,8 +223,8 @@ const checkout = async (req, res) => {
           quantity: item.quantity,
         };
       }),
-      success_url: "http://localhost:5173/success",
-      cancel_url: "http://localhost:5173/",
+      success_url: "https://glamour-food-app1.vercel.app/success",
+      cancel_url: "https://glamour-food-app1.vercel.app/",
     });
     res.json({ url: session.url });
   } catch (error) {
